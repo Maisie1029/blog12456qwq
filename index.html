@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的网站</title>
+    <!-- 这里可以链接外部CSS文件 -->
+
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>我的网站</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" onclick="showSection('home')">我的想法</a></li>
+          <li><a href="#" onclick="showSection('news')">一些记录</a></li>
+          <!-- 修改这里 -->
+          <li>
+            <a href="#contact" onclick="showSection('contact')">我的邮箱</a>
+          </li>
+          <li><a href="#about" onclick="showSection('about')">随心栏</a></li>
+        </ul>
+      </nav>
+
+      <div id="home" class="section">我太菜了qwq</div>
+      
+      <!-- 初始时隐藏 -->
+      <div id="contact" class="section" style="display: none">
+        ...
+      </div>
+      <div id="about" class="section" style="display: none">
+        ...
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>  .我的想法</h1>
+        <p/>  .这里将展示我的一些想法。</p>
+      </section>
+
+      <section id="news">
+        <h2>  .一些记录</h2>
+        <p>  .这里将展示我遇到的一些事情。</p>
+      </section>
+
+      <section id="contact">
+        <h1>  .我的邮箱</h1>
+        <address>
+            .地址:
+          <a href="mailto:wuzhao1029@outlook.com">wuzhao1029@outlook.com</a>
+        </address>
+      </section>
+
+      <section id="about">
+        <h1>.随心栏</h1>
+        <p>.1234567890qwertyuiop</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 我的网站</p>
+    </footer>
+
+    <!-- 这里可以链接外部JavaScript文件 -->
+    <script src="script.js"></script>
+  </body>
+</html>
